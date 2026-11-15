@@ -44,3 +44,62 @@ nav a {
     margin-top: 20px;
     color: #555;
 }
+
+.hero {
+    background-image: url('images/header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    color: white;
+    padding: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.guide nav {
+    background-color: #2F6B73;
+    padding: 8px 12px;
+}
+
+.guide nav a {
+    color: white;
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.left-sidebar,
+.right-sidebar {
+    width: 20%;
+    background-color: #eef4f5;
+    padding: 10px;
+}
+
+.container main {
+    flex: 1;
+    padding: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-sidebar,
+    .right-sidebar {
+        width: 100%;
+    }
+
+    .container main {
+        order: -1;
+    }
+}
