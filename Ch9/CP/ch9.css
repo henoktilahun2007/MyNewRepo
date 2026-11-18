@@ -22,7 +22,8 @@ h1 {
 }
 
 .panel input[type="text"],
-.panel input[type="email"] {
+.panel input[type="email"],
+.panel input[type="password"] {
     width: 280px;
     padding: 4px;
 }
@@ -35,4 +36,15 @@ h1 {
 
 .panel .buttons {
     margin-left: 104px;
+}
+
+.panel .agree {
+    margin-left: 104px;
+}
+
+.panel .agree label {
+    display: inline;
+    width: auto;
+    margin: 0;
+    text-align: left;
 }
