@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Trip Inquiry</title>
+    <link rel="stylesheet" href="ch9lab.css">
+</head>
+
+<body>
+
+    <h1>Plan Your Trip</h1>
+
+    <form id="inquiry" method="post" action="#">
+
+        <p class="form-row">
+            <label for="fullname">Full Name:</label>
+            <input type="text"
+                   id="fullname"
+                   name="fullname"
+                   required
+                   accesskey="n"
+                   tabindex="1">
+        </p>
+
+        <p class="form-row">
+            <label for="email">E-mail:</label>
+            <input type="email"
+                   id="email"
+                   name="email"
+                   required>
+        </p>
+
+        <p class="form-row">
+            <label for="destination">Destination:</label>
+            <select id="destination" name="destination">
+                <optgroup label="Europe">
+                    <option value="paris" selected>Paris</option>
+                    <option value="rome">Rome</option>
+                </optgroup>
+
+                <optgroup label="Asia">
+                    <option value="tokyo">Tokyo</option>
+                    <option value="seoul">Seoul</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <fieldset>
+            <legend>Travel style</legend>
+
+            <input type="radio" id="relaxed" name="travelstyle" value="relaxed" checked>
+            <label for="relaxed">Relaxed</label>
+
+            <input type="radio" id="adventure" name="travelstyle" value="adventure">
+            <label for="adventure">Adventure</label>
+
+            <input type="radio" id="luxury" name="travelstyle" value="luxury">
+            <label for="luxury">Luxury</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Extras</legend>
+
+            <input type="checkbox" id="hotel" name="extras" value="hotel">
+            <label for="hotel">Hotel</label>
+
+            <input type="checkbox" id="rentalcar" name="extras" value="rentalcar">
+            <label for="rentalcar">Rental Car</label>
+
+            <input type="checkbox" id="tours" name="extras" value="tours">
+            <label for="tours">Tours</label>
+        </fieldset>
+
+        <p class="form-row">
+            <label for="comments">Questions / Comments:</label>
+            <textarea id="comments" name="comments" rows="6" cols="40"></textarea>
+        </p>
+
+        <p class="submit-row">
+            <input type="image"
+                   src="images/send-button.png"
+                   alt="Send your inquiry">
+        </p>
+
+    </form>
+
+    <footer>
+        <p>Henok Tilahun</p>
+        <p>
+            <a href="mailto:henok.a.tilahun@gmail.com">
+                henok.a.tilahun@gmail.com
+            </a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
