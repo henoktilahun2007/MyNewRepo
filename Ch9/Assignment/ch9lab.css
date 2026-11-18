@@ -7,6 +7,8 @@ h1 {
     font-family: "Times New Roman", Times, serif;
 }
 
+/* Lab 9.1 */
+
 #inquiry {
     background-color: #eaeaea;
     padding: 20px;
@@ -70,6 +72,62 @@ input[type="image"] {
     width: 180px;
     height: auto;
 }
+
+/* Lab 9.2 */
+
+#request {
+    background-color: #eaeaea;
+    padding: 20px;
+    max-width: 650px;
+}
+
+.request-row > label {
+    display: inline-block;
+    width: 170px;
+    margin-right: 10px;
+    text-align: right;
+    vertical-align: top;
+}
+
+#request input[type="text"],
+#request input[type="email"],
+#request input[type="url"],
+#request input[type="number"],
+#request input[type="date"] {
+    width: 280px;
+    padding: 6px;
+}
+
+#request input[type="range"] {
+    width: 280px;
+}
+
+#request input[type="color"] {
+    width: 60px;
+    height: 35px;
+}
+
+#request input:focus {
+    outline: 3px solid #3366cc;
+    background-color: #fffde7;
+}
+
+.request-submit {
+    margin-left: 180px;
+}
+
+#request button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#request button:hover {
+    background-color: #3366cc;
+    color: white;
+}
+
+/* Footer */
 
 footer {
     margin-top: 25px;
